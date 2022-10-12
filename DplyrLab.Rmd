@@ -29,6 +29,11 @@ Now, change this to see the same plot for the Droids.
 
 ```{r}
 
+Droid <- starwars %>% filter(species == "Droid")
+plot(Droid$height, Droid$mass)
+starwars %>% filter(species == "Droid") %>% plot(mass ~ height, data = .)
+
+
 
 ```
 
