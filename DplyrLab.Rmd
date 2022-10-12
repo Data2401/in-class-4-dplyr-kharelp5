@@ -41,7 +41,7 @@ starwars %>% filter(species == "Droid") %>% plot(mass ~ height, data = .)
 How many characters are from each planet?
 
 ```{r}
-
+starwars %>% group_by(homeworld) %>% count()
 
 
 ```
